@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Phone Store</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <!-- Header Section -->
+      <header id="header">
+        <div class="logo">
+         <a href="#home">
+            <img
+            id="header-img"
+            src="https://thumbs.dreamstime.com/b/stock-illustration-176710275.jpg"
+            alt="Mobile Phone Store Logo"
+          />
+         </a>
+        </div>
+
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container"></div>
+
+      <!-- Hero Section -->
+      <section id="hero">
+        <h2>Latest and Greatest Mobile Phones</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input id="submit" type="submit" value="Get Started" class="btn" />
+        </form>
+      </section>
+
+      <div class="container">
+        <!-- Features Section -->
+        <section id="features">
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-mobile-alt"></i></div>
+            <div class="desc">
+              <h2>High-Resolution Displays</h2>
+              <p>
+                Our phones feature the best displays with vivid colors and high resolution to give you the best viewing experience.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-bolt"></i></div>
+            <div class="desc">
+              <h2>Fast Charging</h2>
+              <p>
+                Equipped with the latest fast charging technology, our phones charge quickly and last all day.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-shield-alt"></i></div>
+            <div class="desc">
+              <h2>Security and Privacy</h2>
+              <p>
+                Our mobile phones have advanced security features like facial recognition and fingerprint sensors to keep your data safe.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works">
+            <iframe
+            id="video" width="560" height="315" src="https://www.youtube.com/embed/HgqpFKiMz-I?si=-qsuQH4wNGUuDc0a"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing">
+          <div class="product" id="model-a">
+            <div class="level">Model A</div>
+            <h2>$699</h2>
+            <ol>
+              <li>High-resolution OLED display</li>
+              <li>64MP camera with night mode</li>
+              <li>5G Connectivity</li>
+              <li>Fast charging support</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="model-b">
+            <div class="level">Model B</div>
+            <h2>$899</h2>
+            <ol>
+              <li>120Hz refresh rate display</li>
+              <li>108MP ultra-wide camera</li>
+              <li>5000mAh battery</li>
+              <li>Wireless charging support</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="model-c">
+            <div class="level">Model C</div>
+            <h2>$1099</h2>
+            <ol>
+              <li>Folding display with 7.6-inch screen</li>
+              <li>Multi-camera setup with 8K video</li>
+              <li>1TB internal storage</li>
+              <li>Water and dust resistant</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <span>Copyright 2024, Mobile Phone Store</span>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

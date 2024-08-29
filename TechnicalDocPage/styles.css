@@ -1,0 +1,138 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #333;
+    background-color: #f4f7f8;
+    line-height: 1.6;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(180deg, #4a54f1, #3042f2);
+    color: #fff;
+    border-right: 2px solid #2c3e50;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    z-index: 1;
+  }
+  
+  header {
+    color: #fff;
+    margin: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+  }
+  
+  #navbar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  #navbar li {
+    border-top: 1px solid #fff;
+  }
+  
+  #navbar a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #navbar a:hover {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+  }
+  
+  #main-doc {
+    margin-left: 320px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  #main-doc header {
+    color: #4a54f1;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  section header {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  section article {
+    color: #555;
+    font-size: 1em;
+    margin: 15px 0;
+  }
+  
+  section li {
+    margin: 10px 0;
+    padding-left: 20px;
+    color: #4a54f1;
+    position: relative;
+  }
+  
+  section li:before {
+    content: '•';
+    color: #4a54f1;
+    position: absolute;
+    left: 0;
+  }
+  
+  code {
+    display: block;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    overflow-x: auto;
+    font-size: 0.9em;
+    color: #e74c3c;
+  }
+  
+  /* Media Queries */
+  @media only screen and (max-width: 815px) {
+    #navbar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      border: none;
+      box-shadow: none;
+    }
+  
+    #main-doc {
+      margin-left: 0;
+      padding: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    #main-doc {
+      padding: 5px;
+    }
+  
+    code {
+      padding: 10px;
+      font-size: 0.8em;
+    }
+  }
+  

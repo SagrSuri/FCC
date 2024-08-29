@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+   <div>
+     <!-- Page Title -->
+     <h1 id="title">Survey Form</h1>
+
+     <!-- Short Explanation -->
+     <p id="description">Please fill out the form below to participate in our survey.</p>
+ 
+     <!-- Form Element -->
+     <form id="survey-form">
+         <!-- Name Field -->
+         <label id="name-label" for="name">Name:</label>
+         <input id="name" type="text" placeholder="Enter your name" required>
+ 
+         <!-- Email Field -->
+         <label id="email-label" for="email">Email:</label>
+         <input id="email" type="email" placeholder="Enter your email" required>
+ 
+         <!-- Number Field -->
+         <label id="number-label" for="number">Age:</label>
+         <input id="number" type="number" placeholder="Enter your age" min="10" max="99" required>
+ 
+         <!-- Dropdown Field -->
+         <label for="dropdown">Select your role:</label>
+         <select id="dropdown">
+             <option value="student">Student</option>
+             <option value="teacher">Teacher</option>
+         </select>
+ 
+         
+        <div class="radio-container">
+            <!-- Radio Buttons -->
+            <p>Would you recommend this survey to a friend?</p>
+            <div class="radio-costome-made">
+                <input type="radio" id="recommend-yes" name="recommend" value="yes">
+                <label for="recommend-yes">Yes</label>
+            </div>
+            <div class="radio-costome-made">
+                <input type="radio" id="recommend-no" name="recommend" value="no">
+                <label for="recommend-no">No</label>
+            </div>
+        </div>
+
+        <div class="radio-container">
+            <!-- Checkboxes -->
+            <p>What topics are you interested in? (Select all that apply)</p>
+            <div class="radio-costome-made">
+                <input type="checkbox" id="topic-technology" name="topic" value="technology">
+                <label for="topic-technology">Technology</label>
+            </div>
+            <div class="radio-costome-made">
+                <input type="checkbox" id="topic-science" name="topic" value="science">
+                <label for="topic-science">Science</label>
+            </div>
+        </div>
+
+         <!-- Textarea -->
+         <label for="comments">Additional comments:</label>
+         <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+ 
+         <!-- Submit Button -->
+         <button id="submit" type="submit">Submit</button>
+     </form>
+   </div>
+</body>
+</html>
